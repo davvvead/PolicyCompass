@@ -35,7 +35,7 @@ export default function Home() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl text-lg mb-12 leading-relaxed">
+        <p className="text-gray-600 dark:text-white max-w-2xl text-lg mb-12 leading-relaxed">
           {t('heroSubtitle')}
         </p>
 
