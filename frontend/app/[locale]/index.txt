@@ -1,0 +1,1 @@
+Give me 10 of the mock data in json format highlighting a complex issue in each of the g7 countries, Choose an extra 3 from the eu. For each mock scenario let's target a complex law from one country and let's include our unique features such as

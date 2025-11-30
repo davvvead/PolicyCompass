@@ -7,7 +7,7 @@ import {notFound} from 'next/navigation';
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-});
+});``
 
 export const metadata = {
   title: "Create Next App",

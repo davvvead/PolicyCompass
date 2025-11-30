@@ -1,0 +1,52 @@
+[
+  {
+    "id": "job_loss",
+    "keywords": ["job", "lost", "unemployed", "work", "fired", "redundant"],
+    "response": "I understand you're going through a difficult time with your employment. Based on current government regulations, you may be eligible for the following support:\n\n1. **Unemployment Insurance (UI)**: Provides temporary financial assistance.\n2. **Job Seeker's Allowance**: If you are actively looking for work.\n3. **Retraining Programs**: Government-funded courses to help you learn new skills.\n\nWould you like me to guide you through the application process for Unemployment Insurance?"
+  },
+  {
+    "id": "disability_support",
+    "keywords": ["disability", "disabled", "handicap", "injury", "accessibility"],
+    "response": "For disability support, there are several programs available depending on your specific needs:\n\n1. **Disability Living Allowance (DLA)**: Helps with extra costs caused by long-term ill health or a disability.\n2. **Personal Independence Payment (PIP)**: For those aged 16 to state pension age.\n3. **Employment and Support Allowance (ESA)**: If your disability affects your ability to work.\n\nI can help you check your eligibility for these programs. Which one would you like to know more about?"
+  },
+  {
+    "id": "housing",
+    "keywords": ["housing", "rent", "homeless", "apartment", "house", "eviction"],
+    "response": "Housing assistance is a critical service. Here are the primary options:\n\n1. **Housing Benefit**: Helps pay your rent if you're unemployed or on a low income.\n2. **Council Housing**: You can apply to your local council for social housing.\n3. **Emergency Housing**: If you are legally homeless or facing eviction.\n\nPlease let me know your current living situation so I can direct you to the right service."
+  },
+  {
+    "id": "childcare",
+    "keywords": ["child", "kid", "baby", "care", "nursery", "school"],
+    "response": "Supporting families is a priority. You might be eligible for:\n\n1. **Tax-Free Childcare**: For working families, including the self-employed.\n2. **30 Hours Free Childcare**: For working parents of 3 and 4-year-olds.\n3. **Child Benefit**: An allowance for each child you are responsible for.\n\nWould you like to calculate how much support you could receive?"
+  },
+  {
+    "id": "pension",
+    "keywords": ["pension", "retire", "old", "senior", "age"],
+    "response": "Planning for retirement or claiming your pension involves a few steps:\n\n1. **State Pension**: The regular payment from the government once you reach State Pension age.\n2. **Pension Credit**: Extra money to help with living costs if you're over State Pension age and on a low income.\n3. **Winter Fuel Payment**: Help with heating bills.\n\nHave you checked your State Pension age yet?"
+  },
+  {
+    "id": "healthcare",
+    "keywords": ["health", "doctor", "medical", "sick", "hospital", "medicine"],
+    "response": "Access to healthcare services includes:\n\n1. **NHS Services**: Most services are free at the point of use for residents.\n2. **Prescription Prepayment Certificates (PPC)**: Can save money if you need regular prescriptions.\n3. **Low Income Scheme**: Help with health costs like dental treatment and eye tests.\n\nDo you need help finding a local GP or dentist?"
+  },
+  {
+    "id": "education",
+    "keywords": ["school", "university", "student", "learn", "degree", "college"],
+    "response": "For education and student support:\n\n1. **Student Finance**: Loans and grants for tuition fees and living costs.\n2. **Adult Learning**: Free courses for those without Level 3 qualifications.\n3. **Apprenticeships**: Earn while you learn.\n\nAre you looking for information on student loans or adult education courses?"
+  },
+  {
+    "id": "tax",
+    "keywords": ["tax", "income", "vat", "revenue", "deduction"],
+    "response": "Navigating the tax system can be complex. Common topics include:\n\n1. **Self Assessment**: If you're self-employed or have other income.\n2. **Tax Codes**: Understanding what you pay on your salary.\n3. **Marriage Allowance**: Transferring personal allowance to your partner.\n\nDo you need help filing a Self Assessment tax return?"
+  },
+  {
+    "id": "immigration",
+    "keywords": ["visa", "passport", "citizen", "immigration", "travel", "resident"],
+    "response": "Regarding immigration and citizenship:\n\n1. **Visa Applications**: For work, study, or joining family.\n2. **Settled Status**: For EU, EEA, or Swiss citizens.\n3. **Naturalisation**: The process of becoming a British citizen.\n\nWhat type of visa or status are you inquiring about?"
+  },
+  {
+    "id": "legal_aid",
+    "keywords": ["legal", "lawyer", "court", "justice", "sue", "dispute"],
+    "response": "Legal support is available for those who qualify:\n\n1. **Legal Aid**: Help with costs of legal advice for issues like debt, housing, or family law.\n2. **Citizens Advice**: Free, confidential information and advice.\n3. **Civil Legal Advice (CLA)**: Free legal advice over the phone for specific problems.\n\nIs your query related to a civil or criminal matter?"
+  }
+]
