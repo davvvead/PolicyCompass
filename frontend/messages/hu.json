@@ -4,9 +4,16 @@
     "alignment": "ÖSSZHANG",
     "confidence": "BIZALOM",
     "navigation": "NAVIGÁCIÓ",
-    "heroTitle": "Világosság, amiben bízhat!",
+    "heroTitle": "Navigáljon a szabályzatok között magabiztosan.",
     "heroSubtitle": "A PolicyCompass egy MI platform, amely csökkenti a kommunikációs akadályokat azáltal, hogy világossá és hozzáférhetővé teszi a kormányzati előírásokat.",
     "placeholder": "Írja ide a kérdését",
     "getStarted": "Kezdés"
+  },
+  "Chat": {
+    "description": "Szabályzatok közötti navigáció és magyarázhatóság kormányzati szinten",
+    "newChat": "Új chat",
+    "settings": "Beállítások",
+    "trustSafety": "Bizalom és biztonság",
+    "inputPlaceholder": "Írja le a helyzetét..."
   }
 }

@@ -5,8 +5,10 @@ import { MessageSquare, Plus, Settings, LogOut, Menu } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Sidebar({ className, isOpen = true, setIsOpen = () => {} }) {
+  const t = useTranslations('Chat');
   const pathname = usePathname();
   const locale = pathname.split('/')[1] || 'en';
 
@@ -44,7 +46,7 @@ export default function Sidebar({ className, isOpen = true, setIsOpen = () => {}
                 className="flex items-center justify-center gap-2 px-6 py-2.5 flex-1 bg-[#98F0E1] text-[#020202] dark:bg-[#034ADE] dark:text-white rounded-full font-medium hover:opacity-90 transition-opacity text-sm"
               >
                 <Plus className="w-4 h-4" />
-                <span>New Chat</span>
+                <span>{t('newChat')}</span>
               </Link>
             </div>
           </div>
@@ -69,7 +71,7 @@ export default function Sidebar({ className, isOpen = true, setIsOpen = () => {}
           <div className="p-4 border-t border-sidebar-border/70">
             <button className="flex items-center gap-2 w-full px-2 py-2 text-sm text-sidebar-foreground hover:bg-sidebar-accent/60 rounded-md transition-colors">
               <Settings className="w-4 h-4" />
-              <span>Settings</span>
+              <span>{t('settings')}</span>
             </button>
             <div className="mt-2 flex items-center gap-2 px-2 py-2">
               <div className="w-8 h-8 rounded-full bg-linear-to-br from-[#649DE1] to-[#90DDD1]" />

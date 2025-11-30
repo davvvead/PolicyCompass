@@ -4,9 +4,16 @@
     "alignment": "JOONDUS",
     "confidence": "KINDLUSTUNNE",
     "navigation": "NAVIGATSIOON",
-    "heroTitle": "Selgus, mida võite usaldada!",
+    "heroTitle": "Navigeerige poliitikates enesekindlalt.",
     "heroSubtitle": "PolicyCompass on tehisintellekti platvorm, mis vähendab suhtlusbarjääre, muutes valitsuse määrused selgeks ja kättesaadavaks.",
     "placeholder": "Sisestage oma küsimus siia",
     "getStarted": "Alusta"
+  },
+  "Chat": {
+    "description": "Poliitika navigeerimine ja selgitamine valitsuse tasemel",
+    "newChat": "Uus vestlus",
+    "settings": "Seaded",
+    "trustSafety": "Usaldus ja turvalisus",
+    "inputPlaceholder": "Kirjeldage oma olukorda..."
   }
 }

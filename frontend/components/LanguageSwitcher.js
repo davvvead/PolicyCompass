@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { cn } from "@/lib/utils";
 
 const languages = [
   { code: 'bg', name: 'BG', flag: '🇧🇬' },
@@ -31,7 +32,7 @@ const languages = [
   { code: 'sv', name: 'SV', flag: '🇸🇪' },
 ];
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ className }) {
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +52,10 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-white hover:text-black dark:hover:text-white transition-colors"
+        className={cn(
+          "flex items-center gap-1 sm:gap-2 text-sm font-medium text-gray-700 dark:text-white hover:text-black dark:hover:text-white transition-colors",
+          className
+        )}
       >
         {currentLang.name} <span className="text-lg">{currentLang.flag}</span>
       </button>

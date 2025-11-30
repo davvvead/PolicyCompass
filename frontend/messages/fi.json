@@ -4,9 +4,18 @@
     "alignment": "LINJAUS",
     "confidence": "LUOTTAMUS",
     "navigation": "NAVIGOINTI",
-    "heroTitle": "Selkeyttä johon voit luottaa!",
+    "heroTitle": "Navigoi käytännöissä luottavaisin mielin.",
     "heroSubtitle": "PolicyCompass on tekoälyalusta, joka vähentää viestinnän esteitä tekemällä hallituksen säädöksistä selkeitä ja helposti lähestyttäviä.",
     "placeholder": "Kirjoita kysymyksesi tähän",
-    "getStarted": "Aloita"
+    "getStarted": "Aloita",
+    "preferences": "Asetukset",
+    "language": "Kieli"
+  },
+  "Chat": {
+    "description": "Politiikkojen navigointi ja selitettävyys hallitustasolla",
+    "newChat": "Uusi chat",
+    "settings": "Asetukset",
+    "trustSafety": "Luottamus ja turvallisuus",
+    "inputPlaceholder": "Kuvaile tilanteesi..."
   }
 }

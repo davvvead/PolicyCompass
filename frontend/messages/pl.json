@@ -4,9 +4,18 @@
     "alignment": "DOPASOWANIE",
     "confidence": "ZAUFANIE",
     "navigation": "NAWIGACJA",
-    "heroTitle": "Przejrzystość, której możesz zaufać!",
+    "heroTitle": "Poruszaj się po zasadach z pewnością.",
     "heroSubtitle": "PolicyCompass to platforma AI, która zmniejsza bariery komunikacyjne, czyniąc przepisy rządowe jasnymi i dostępnymi.",
     "placeholder": "Wpisz tutaj swoje pytanie",
-    "getStarted": "Rozpocznij"
+    "getStarted": "Rozpocznij",
+    "preferences": "Preferencje",
+    "language": "Język"
+  },
+  "Chat": {
+    "description": "Nawigacja w politykach i ich wyjaśnialność na poziomie rządowym",
+    "newChat": "Nowy czat",
+    "settings": "Ustawienia",
+    "trustSafety": "Zaufanie i bezpieczeństwo",
+    "inputPlaceholder": "Opisz swoją sytuację..."
   }
 }

@@ -33,14 +33,14 @@ export default function ScenarioBreakdownCard() {
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, staggerChildren: 0.04 }}
-      className="space-y-3"
+      className="space-y-1.5 xs:space-y-2 min-w-0"
     >
-      <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground px-1">
-        <Briefcase className="w-3.5 h-3.5" />
+      <div className="flex items-center gap-1 xs:gap-1.5 text-[10px] xs:text-xs font-medium text-muted-foreground px-0.5 xs:px-1">
+        <Briefcase className="w-2.5 xs:w-3.5 h-2.5 xs:h-3.5 shrink-0" />
         <span>Scenario Context</span>
       </div>
       
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1 overflow-hidden min-w-0">
         {scenario.parsedFactors.map((factor) => {
           const Icon = iconMap[factor.category] || Flag;
           const colorClass = colorMap[factor.category] || "bg-secondary/60 text-secondary-foreground border-border/60";
@@ -52,9 +52,9 @@ export default function ScenarioBreakdownCard() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25 }}
             >
-              <div className={`flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs border ${colorClass}`}>
-                <Icon className="w-3 h-3 opacity-80" />
-                <span>{factor.label}</span>
+              <div className={`flex items-center gap-0.5 xs:gap-1 py-0.5 xs:py-1 px-1.5 xs:px-2 rounded-md text-[9px] xs:text-[10px] border whitespace-nowrap shrink-0 ${colorClass}`}>
+                <Icon className="w-2 xs:w-2.5 h-2 xs:h-2.5 opacity-80 shrink-0" />
+                <span className="truncate">{factor.label}</span>
               </div>
             </motion.div>
           );

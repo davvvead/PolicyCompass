@@ -4,9 +4,16 @@
     "alignment": "SUDERINAMUMAS",
     "confidence": "PASITIKĖJIMAS",
     "navigation": "NAVIGACIJA",
-    "heroTitle": "Aiškumas, kuriuo galite pasitikėti!",
+    "heroTitle": "Naršykite politiką užtikrintai.",
     "heroSubtitle": "„Policy Bridge“ yra dirbtinio intelekto platforma, mažinanti bendravimo barjerus, nes vyriausybės reglamentai tampa aiškūs ir prieinami.",
     "placeholder": "Įveskite savo klausimą čia",
     "getStarted": "Pradėti"
+  },
+  "Chat": {
+    "description": "Politikos naršymas ir paaiškinamumas vyriausybiniu lygiu",
+    "newChat": "Naujas pokalbis",
+    "settings": "Nustatymai",
+    "trustSafety": "Pasitikėjimas ir saugumas",
+    "inputPlaceholder": "Apibūdinkite savo situaciją..."
   }
 }

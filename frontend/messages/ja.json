@@ -4,9 +4,16 @@
     "alignment": "整合性",
     "confidence": "信頼",
     "navigation": "ナビゲーション",
-    "heroTitle": "信頼できる明確さを！",
+    "heroTitle": "自信を持ってポリシーをナビゲートします。",
     "heroSubtitle": "Policy Bridgeは、政府の規制を明確かつアクセスしやすくすることで、コミュニケーションの障壁を低減するAIプラットフォームです。",
     "placeholder": "ここに質問を入力してください",
     "getStarted": "始める"
+  },
+  "Chat": {
+    "description": "政府レベルのポリシーのナビゲーションと説明可能性",
+    "newChat": "新しいチャット",
+    "settings": "設定",
+    "trustSafety": "信頼と安全性",
+    "inputPlaceholder": "ご自身の状況を説明してください..."
   }
 }

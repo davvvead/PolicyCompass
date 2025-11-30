@@ -4,9 +4,16 @@
     "alignment": "ALINIERE",
     "confidence": "ÎNCREDERE",
     "navigation": "NAVIGARE",
-    "heroTitle": "Claritate în care poți avea încredere!",
+    "heroTitle": "Navigați prin politici cu încredere.",
     "heroSubtitle": "PolicyCompass este o platformă AI care reduce barierele de comunicare făcând reglementările guvernamentale clare și accesibile.",
     "placeholder": "Introduceți întrebarea aici",
     "getStarted": "Începeți"
+  },
+  "Chat": {
+    "description": "Navigarea și explicabilitatea politicilor la nivel guvernamental",
+    "newChat": "Chat nou",
+    "settings": "Setări",
+    "trustSafety": "Încredere și siguranță",
+    "inputPlaceholder": "Descrieți-vă situația..."
   }
 }

@@ -7,6 +7,15 @@
     "heroTitle": "Navigate policies with confidence.",
     "heroSubtitle": "PolicyCompass is an AI platform that reduces communication barriers by making government regulations clear and accessible.",
     "placeholder": "Type your question here",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "preferences": "Preferences",
+    "language": "Language"
+  },
+  "Chat": {
+    "description": "Government-grade policy navigation and explainability",
+    "newChat": "New chat",
+    "settings": "Settings",
+    "trustSafety": "Trust & Safety",
+    "inputPlaceholder": "Describe your situation..."
   }
 }

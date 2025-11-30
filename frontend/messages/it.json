@@ -4,9 +4,18 @@
     "alignment": "ALLINEAMENTO",
     "confidence": "FIDUCIA",
     "navigation": "NAVIGAZIONE",
-    "heroTitle": "Chiarezza di cui ti puoi fidare!",
+    "heroTitle": "Naviga tra le politiche con sicurezza.",
     "heroSubtitle": "PolicyCompass è una piattaforma AI che riduce le barriere comunicative rendendo le normative governative chiare e accessibili.",
     "placeholder": "Scrivi qui la tua domanda",
-    "getStarted": "Inizia"
+    "getStarted": "Inizia",
+    "preferences": "Preferenze",
+    "language": "Lingua"
+  },
+  "Chat": {
+    "description": "Navigazione e spiegazione delle politiche a livello governativo",
+    "newChat": "Nuova chat",
+    "settings": "Impostazioni",
+    "trustSafety": "Affidabilità e sicurezza",
+    "inputPlaceholder": "Descrivi la tua situazione..."
   }
 }

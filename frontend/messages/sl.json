@@ -4,9 +4,16 @@
     "alignment": "USKLAJENOST",
     "confidence": "ZAUPANJE",
     "navigation": "NAVIGACIJA",
-    "heroTitle": "Jasnost, ki ji lahko zaupate!",
+    "heroTitle": "Samozavestno krmarite po pravilnikih.",
     "heroSubtitle": "PolicyCompass je platforma z umetno inteligenco, ki zmanjšuje komunikacijske ovire, saj so vladni predpisi jasni in dostopni.",
     "placeholder": "Vnesite svoje vprašanje tukaj",
     "getStarted": "Začnite"
+  },
+  "Chat": {
+    "description": "Navigacija po politikah in njihova razložljivost na vladni ravni",
+    "newChat": "Nov klepet",
+    "settings": "Nastavitve",
+    "trustSafety": "Zaupanje in varnost",
+    "inputPlaceholder": "Opišite svojo situacijo..."
   }
 }

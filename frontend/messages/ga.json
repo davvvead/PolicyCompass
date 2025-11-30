@@ -4,9 +4,16 @@
     "alignment": "AILÍNIÚ",
     "confidence": "MUINÍN",
     "navigation": "LOINGSEOIREACHT",
-    "heroTitle": "Soiléire ar féidir leat muinín a bheith agat as!",
+    "heroTitle": "Déan nascleanúint ar pholasaithe go muiníneach.",
     "heroSubtitle": "Is ardán AI é PolicyCompass a laghdaíonn bacainní cumarsáide trí rialacháin rialtais a dhéanamh soiléir agus inrochtana.",
     "placeholder": "Clóscríobh do cheist anseo",
     "getStarted": "Tosaigh"
+  },
+  "Chat": {
+    "description": "Nascleanúint agus mínitheas polasaí ar leibhéal rialtais",
+    "newChat": "Comhrá nua",
+    "settings": "Socruithe",
+    "trustSafety": "Muinín agus sábháilteacht",
+    "inputPlaceholder": "Déan cur síos ar do chás..."
   }
 }

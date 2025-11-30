@@ -4,9 +4,16 @@
     "alignment": "ALLINJAMENT",
     "confidence": "FIDUĊJA",
     "navigation": "NAVIGAZZJONI",
-    "heroTitle": "Ċarezza li tista' tafda!",
+    "heroTitle": "Innaviga l-politiki b'kunfidenza.",
     "heroSubtitle": "PolicyCompass hija pjattaforma tal-AI li tnaqqas l-ostakli tal-komunikazzjoni billi tagħmel ir-regolamenti tal-gvern ċari u aċċessibbli.",
     "placeholder": "Ittajpja l-mistoqsija tiegħek hawn",
     "getStarted": "Ibda"
+  },
+  "Chat": {
+    "description": "Navigazzjoni u spjegabbiltà tal-politiki fil-livell tal-gvern",
+    "newChat": "Chat ġdid",
+    "settings": "Settings",
+    "trustSafety": "Fiduċja u sigurtà",
+    "inputPlaceholder": "Iddeskrivi s-sitwazzjoni tiegħek..."
   }
 }

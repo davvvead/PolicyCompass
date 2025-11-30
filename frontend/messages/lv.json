@@ -4,9 +4,16 @@
     "alignment": "SASKAŅOTĪBA",
     "confidence": "UZTICĪBA",
     "navigation": "NAVIGĀCIJA",
-    "heroTitle": "Skaidrība, kurai varat uzticēties!",
+    "heroTitle": "Pārliecinoši orientējieties politikās.",
     "heroSubtitle": "PolicyCompass ir AI platforma, kas samazina saziņas barjeras, padarot valdības noteikumus skaidrus un pieejamus.",
     "placeholder": "Ierakstiet savu jautājumu šeit",
     "getStarted": "Sākt"
+  },
+  "Chat": {
+    "description": "Politiku navigācija un izskaidrojamība valdības līmenī",
+    "newChat": "Jauns čats",
+    "settings": "Iestatījumi",
+    "trustSafety": "Uzticēšanās un drošība",
+    "inputPlaceholder": "Aprakstiet savu situāciju..."
   }
 }

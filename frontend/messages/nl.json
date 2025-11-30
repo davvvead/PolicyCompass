@@ -4,9 +4,18 @@
     "alignment": "AFSTEMMING",
     "confidence": "VERTROUWEN",
     "navigation": "NAVIGATIE",
-    "heroTitle": "Duidelijkheid die u kunt vertrouwen!",
+    "heroTitle": "Navigeer met vertrouwen door beleid.",
     "heroSubtitle": "PolicyCompass is een AI-platform dat communicatiebarrières vermindert door overheidsvoorschriften duidelijk en toegankelijk te maken.",
     "placeholder": "Typ hier uw vraag",
-    "getStarted": "Aan de slag"
+    "getStarted": "Aan de slag",
+    "preferences": "Voorkeuren",
+    "language": "Taal"
+  },
+  "Chat": {
+    "description": "Beleidsnavigatie en uitlegbaarheid op overheidsniveau",
+    "newChat": "Nieuw chat",
+    "settings": "Instellingen",
+    "trustSafety": "Vertrouwen en veiligheid",
+    "inputPlaceholder": "Beschrijf uw situatie..."
   }
 }

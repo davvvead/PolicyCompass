@@ -4,9 +4,16 @@
     "alignment": "ZOSÚLADENIE",
     "confidence": "DÔVERA",
     "navigation": "NAVIGÁCIA",
-    "heroTitle": "Jasnosť, ktorej môžete dôverovať!",
+    "heroTitle": "Prechádzajte zásadami s istotou.",
     "heroSubtitle": "PolicyCompass je platforma AI, ktorá znižuje komunikačné bariéry tým, že robí vládne nariadenia jasnými a prístupnými.",
     "placeholder": "Sem napíšte svoju otázku",
     "getStarted": "Začať"
+  },
+  "Chat": {
+    "description": "Navigácia v politikách a ich vysvetliteľnosť na vládnej úrovni",
+    "newChat": "Nový chat",
+    "settings": "Nastavenia",
+    "trustSafety": "Dôvera a bezpečnosť",
+    "inputPlaceholder": "Opíšte svoju situáciu..."
   }
 }

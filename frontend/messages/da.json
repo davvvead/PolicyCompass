@@ -4,9 +4,18 @@
     "alignment": "JUSTERING",
     "confidence": "TILLID",
     "navigation": "NAVIGATION",
-    "heroTitle": "Klarhed du kan stole på!",
+    "heroTitle": "Naviger i politikker med tillid.",
     "heroSubtitle": "PolicyCompass er en AI-platform, der reducerer kommunikationsbarrierer ved at gøre statslige regler klare og tilgængelige.",
     "placeholder": "Skriv dit spørgsmål her",
-    "getStarted": "Kom i gang"
+    "getStarted": "Kom i gang",
+    "preferences": "Indstillinger",
+    "language": "Sprog"
+  },
+  "Chat": {
+    "description": "Politiknavigation og forklarlighed på regeringsniveau",
+    "newChat": "Ny chat",
+    "settings": "Indstillinger",
+    "trustSafety": "Tillid og sikkerhed",
+    "inputPlaceholder": "Beskriv din situation..."
   }
 }

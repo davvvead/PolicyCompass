@@ -4,9 +4,18 @@
     "alignment": "AUSRICHTUNG",
     "confidence": "VERTRAUEN",
     "navigation": "NAVIGATION",
-    "heroTitle": "Klarheit, der Sie vertrauen können!",
+    "heroTitle": "Navigieren Sie sicher durch Richtlinien.",
     "heroSubtitle": "PolicyCompass ist eine KI-Plattform, die Kommunikationsbarrieren abbaut, indem sie staatliche Vorschriften klar und zugänglich macht.",
     "placeholder": "Geben Sie hier Ihre Frage ein",
-    "getStarted": "Loslegen"
+    "getStarted": "Loslegen",
+    "preferences": "Einstellungen",
+    "language": "Sprache"
+  },
+  "Chat": {
+    "description": "Politiknavigation und Erklärbarkeit auf Regierungsniveau",
+    "newChat": "Neuer Chat",
+    "settings": "Einstellungen",
+    "trustSafety": "Vertrauen & Sicherheit",
+    "inputPlaceholder": "Beschreiben Sie Ihre Situation..."
   }
 }
