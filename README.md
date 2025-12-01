@@ -434,19 +434,7 @@ React context providing:
 
 ---
 
-## 📄 License
-
-[Add your license here]
-
----
-
-## 🤝 Contributing
-
-[Add contribution guidelines]
-
----
-
-## 📞 Support
+##  Support
 
 For issues and questions:
 - Create an issue on GitHub
