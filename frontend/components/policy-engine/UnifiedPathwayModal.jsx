@@ -75,7 +75,16 @@ export default function UnifiedPathwayModal({ open, onOpenChange }) {
                           This step ensures alignment with federal income-support guidelines and provincial top-ups for caregiving roles.
                         </p>
                       )}
-                      <Button variant="outline" size="sm" className="w-full sm:w-auto text-xs mt-2">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="w-full sm:w-auto text-xs mt-2"
+                        onClick={() => {
+                          if (pathStep.actionUrl && pathStep.actionUrl !== '#') {
+                            window.open(pathStep.actionUrl, '_blank');
+                          }
+                        }}
+                      >
                         Open official guidance <ExternalLink className="w-3 h-3 ml-1" />
                       </Button>
                     </CardContent>

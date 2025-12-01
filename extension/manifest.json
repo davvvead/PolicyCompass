@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "PolicyCompass - Government Service Navigator",
+  "version": "1.0.0",
+  "description": "AI-powered extension to help you navigate government services with simple language, step-by-step guidance, and highlighted information on federal, provincial, and municipal websites.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.canada.ca/*",
+    "https://ontario.ca/*",
+    "https://www.toronto.ca/*",
+    "https://*.gov.ca/*",
+    "https://*.gov.on.ca/*",
+    "https://*.toronto.ca/*"
+  ],
+  "action": {
+    "default_title": "PolicyCompass Navigator",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.canada.ca/*",
+        "https://ontario.ca/*",
+        "https://www.toronto.ca/*",
+        "https://*.gov.ca/*",
+        "https://*.gov.on.ca/*",
+        "https://*.toronto.ca/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

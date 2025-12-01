@@ -8,8 +8,8 @@ export default function IntersectionMapPreview({
 }) {
   return (
     <div className="border rounded-lg p-4 bg-card shadow-sm">
-      <h3 className="text-sm font-medium mb-3">Policy relationships at a glance</h3>
-      <div className="flex flex-wrap gap-4 text-sm mb-3">
+      <h3 className="text-base xs:text-lg font-semibold mb-3">Policy relationships at a glance</h3>
+      <div className="flex flex-wrap gap-4 text-base mb-3">
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-emerald-500" />
           <span className="text-muted-foreground">Aligned: <span className="text-foreground font-medium">{alignedCount} programmes</span></span>

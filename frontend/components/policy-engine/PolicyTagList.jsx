@@ -18,7 +18,7 @@ export default function PolicyTagList() {
   return (
     <div className="space-y-4 pt-2">
       <div className="flex items-center justify-between px-1">
-        <h3 className="text-sm font-medium text-foreground flex items-center gap-2">
+        <h3 className="text-base xs:text-lg font-semibold text-foreground flex items-center gap-2">
           <span>Active Policies & Regulations</span>
           <span className="bg-muted text-xs px-2 py-0.5 rounded-full text-muted-foreground">
             {scenario.policies.length}
@@ -36,11 +36,11 @@ export default function PolicyTagList() {
             className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 hover:shadow-md transition-shadow"
           >
             <div className="flex items-center justify-between mb-3">
-              <Badge variant="outline" className="font-mono text-[11px] bg-muted/50">
+              <Badge variant="outline" className="font-mono text-xs bg-muted/50">
                 {policy.code}
               </Badge>
               <span className={cn(
-                "text-[10px] px-2 py-0.5 rounded-full capitalize border font-medium",
+                "text-xs px-2 py-0.5 rounded-full capitalize border font-medium",
                 policy.status === 'conflict' ? "bg-red-50 text-red-700 border-red-200 dark:bg-red-900/20 dark:text-red-300 dark:border-red-800" :
                 policy.status === 'ambiguous' ? "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/20 dark:text-amber-300 dark:border-amber-800" :
                 "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-300 dark:border-emerald-800"
@@ -48,8 +48,8 @@ export default function PolicyTagList() {
                 {policy.status}
               </span>
             </div>
-            <h4 className="text-sm font-semibold mb-2">{policy.name}</h4>
-            <p className="text-xs text-muted-foreground leading-relaxed">
+            <h4 className="text-base font-semibold mb-2">{policy.name}</h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">
               {policy.description}
             </p>
           </motion.div>

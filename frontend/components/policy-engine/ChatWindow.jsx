@@ -90,9 +90,9 @@ export default function ChatWindow() {
 
   return (
     <Card className="h-full flex flex-col border bg-white shadow-sm min-w-0">
-      <CardContent className="flex-1 flex flex-col p-1.5 xs:p-2 sm:p-4 gap-1.5 xs:gap-2 sm:gap-3 overflow-hidden min-w-0">
+      <CardContent className="flex-1 flex flex-col p-2 xs:p-3 sm:p-4 gap-2 xs:gap-2.5 sm:gap-3 overflow-hidden min-w-0">
         <ScrollArea className="flex-1 pr-1 xs:pr-2 sm:pr-4">
-          <div className="space-y-1.5 xs:space-y-2 sm:space-y-3 pb-3 text-xs xs:text-sm">
+          <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 pb-3 text-sm xs:text-base sm:text-base">
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -103,12 +103,12 @@ export default function ChatWindow() {
               >
                 {msg.role === 'system' && (
                   <div className="w-6 xs:w-8 h-6 xs:h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Bot className="w-3 xs:w-4 h-3 xs:h-4 text-primary" />
+                    <Bot className="w-4 xs:w-5 h-4 xs:h-5 text-primary" />
                   </div>
                 )}
                 <div
                   className={cn(
-                    "rounded-lg px-1.5 xs:px-2 sm:px-4 py-1 xs:py-1.5 sm:py-2 max-w-full min-w-0 text-xs xs:text-sm overflow-wrap-break-word",
+                    "rounded-lg px-3 xs:px-3.5 sm:px-4 py-2 xs:py-2.5 sm:py-3 max-w-full min-w-0 text-sm xs:text-base sm:text-base overflow-wrap-break-word",
                     msg.role === 'user'
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted text-foreground"
@@ -118,7 +118,7 @@ export default function ChatWindow() {
                 </div>
                 {msg.role === 'user' && (
                   <div className="w-6 xs:w-8 h-6 xs:h-8 rounded-full bg-secondary flex items-center justify-center shrink-0">
-                    <User className="w-3 xs:w-4 h-3 xs:h-4 text-secondary-foreground" />
+                    <User className="w-4 xs:w-5 h-4 xs:h-5 text-secondary-foreground" />
                   </div>
                 )}
               </div>
@@ -147,7 +147,7 @@ export default function ChatWindow() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder={t('inputPlaceholder')}
-              className="flex-1 bg-transparent outline-none px-0.5 xs:px-1 sm:px-2 text-gray-700 dark:text-white dark:placeholder-gray-200 placeholder-gray-400 text-[11px] xs:text-xs sm:text-sm min-w-0"
+              className="flex-1 bg-transparent outline-none px-0.5 xs:px-1 sm:px-2 text-gray-700 dark:text-white dark:placeholder-gray-200 placeholder-gray-400 text-sm xs:text-base sm:text-base min-w-0"
             />
 
             {/* Mic Button */}

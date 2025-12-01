@@ -19,9 +19,9 @@ export default function UnifiedPathwayView() {
 
   return (
     <div className="space-y-5 p-1">
-      <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
         <div className="flex items-center gap-2 text-muted-foreground">
-          <Clock className="w-3 h-3" />
+          <Clock className="w-3 h-3 shrink-0" />
           <span>Typical completion time: 4–6 weeks</span>
         </div>
       </div>
@@ -36,18 +36,27 @@ export default function UnifiedPathwayView() {
           >
             <Card className="border-l-4 border-l-[#90DDD1] dark:border-l-[#649DE1] shadow-sm hover:shadow-md transition-all">
               <CardHeader className="pb-2">
-                <div className="flex items-center justify-between">
-                  <Badge variant="secondary" className="mb-2 bg-[#90DDD1]/20 text-teal-900 dark:bg-[#649DE1]/20 dark:text-blue-100 hover:bg-[#90DDD1]/30">Step {index + 1}</Badge>
-                  <div className="flex items-center text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3 mr-1" />
+                <div className="flex items-start justify-between gap-2">
+                  <Badge variant="secondary" className="mb-2 bg-[#90DDD1]/20 text-teal-900 dark:bg-[#649DE1]/20 dark:text-blue-100 hover:bg-[#90DDD1]/30 whitespace-nowrap shrink-0">Step {index + 1}</Badge>
+                  <div className="flex items-center text-sm text-muted-foreground text-right">
+                    <Clock className="w-3 h-3 mr-1 shrink-0" />
                     {step.deadline}
                   </div>
                 </div>
                 <CardTitle className="text-lg text-foreground">{step.title}</CardTitle>
-                <CardDescription>{step.description}</CardDescription>
+                <CardDescription className="text-sm">{step.description}</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-3 text-xs">
-                <Button className="w-full sm:w-auto border-[#90DDD1]/50 dark:border-[#649DE1]/50 hover:bg-[#90DDD1]/10 dark:hover:bg-[#649DE1]/10 text-foreground" size="sm" variant="outline">
+              <CardContent className="space-y-3 text-sm">
+                <Button 
+                  className="w-full sm:w-auto border-[#90DDD1]/50 dark:border-[#649DE1]/50 hover:bg-[#90DDD1]/10 dark:hover:bg-[#649DE1]/10 text-foreground" 
+                  size="sm" 
+                  variant="outline"
+                  onClick={() => {
+                    if (step.actionUrl && step.actionUrl !== '#') {
+                      window.open(step.actionUrl, '_blank');
+                    }
+                  }}
+                >
                   Open official guidance <ExternalLink className="w-3 h-3 ml-2" />
                 </Button>
               </CardContent>
@@ -58,14 +67,14 @@ export default function UnifiedPathwayView() {
       <div className="grid gap-4 md:grid-cols-2">
         <Card className="bg-blue-50/50 dark:bg-blue-950/20 border-blue-100 dark:border-blue-900/50">
           <CardHeader className="pb-2">
-            <CardTitle className="text-sm flex items-center gap-2 text-blue-700 dark:text-blue-300">
+            <CardTitle className="text-base xs:text-lg flex items-center gap-2 text-blue-700 dark:text-blue-300">
               <FileText className="w-4 h-4" />
               Document checklist
             </CardTitle>
-            <CardDescription className="text-xs text-blue-600/80 dark:text-blue-400/80">Mocked example — not legal advice.</CardDescription>
+            {/* <CardDescription className="text-xs text-blue-600/80 dark:text-blue-400/80">Mocked example — not legal advice.</CardDescription> */}
           </CardHeader>
           <CardContent>
-            <ul className="space-y-2 text-xs text-blue-900/80 dark:text-blue-100/80">
+            <ul className="space-y-2 text-sm text-blue-900/80 dark:text-blue-100/80">
               <li className="flex items-center gap-2">
                 <CheckSquare className="w-3 h-3 text-blue-500" />
                 Record of Employment (ROE)
@@ -84,12 +93,12 @@ export default function UnifiedPathwayView() {
 
         <Card className="bg-amber-50/50 dark:bg-amber-950/20 border-amber-100 dark:border-amber-900/50">
           <CardHeader className="pb-2">
-            <CardTitle className="text-sm flex items-center gap-2 text-amber-700 dark:text-amber-400">
+            <CardTitle className="text-base xs:text-lg flex items-center gap-2 text-amber-700 dark:text-amber-400">
               <AlertCircle className="w-4 h-4" />
               Deadlines & appeals
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-3 text-xs text-amber-900/80 dark:text-amber-100/80">
+          <CardContent className="space-y-3 text-sm text-amber-900/80 dark:text-amber-100/80">
             <div className="space-y-1">
               <div className="flex items-center justify-between">
                 <span>Initial application window</span>
@@ -112,17 +121,14 @@ export default function UnifiedPathwayView() {
 
       <Card className="bg-background border-dashed">
         <CardHeader className="pb-2">
-          <CardTitle className="text-sm flex items-center gap-2">
+          <CardTitle className="text-base xs:text-lg flex items-center gap-2">
             <GitBranch className="w-4 h-4" />
             Exceptions & manual review
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-xs text-muted-foreground space-y-2">
+        <CardContent className="text-sm text-muted-foreground space-y-2">
           <p>
-            This pathway is a mock, machine-generated view. Programs can make case-by-case exceptions, especially for disability and caregiving.
-          </p>
-          <p>
-            A trained officer should always validate complex cases before any benefits are changed or stopped.
+            This pathway is a machine-generated preview. Real programs can make case-by-case exceptions, especially for disability and caregiving situations. A trained officer should review complex cases before any benefits are confirmed, changed, or stopped.
           </p>
         </CardContent>
       </Card>

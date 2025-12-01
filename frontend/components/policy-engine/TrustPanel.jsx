@@ -22,12 +22,12 @@ export default function TrustPanel() {
             </div>
             Trust & Safety
           </SheetTitle>
-          <SheetDescription className="text-xs">
+          <SheetDescription className="text-sm">
             Transparency summary for this assessment pathway.
           </SheetDescription>
         </SheetHeader>
         
-        <div className="mt-6 space-y-6 text-sm">
+        <div className="mt-6 space-y-6 text-base">
           {/* Confidence Section */}
           <section className="space-y-3 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <div className="flex items-center gap-2">
@@ -43,7 +43,7 @@ export default function TrustPanel() {
                 </div>
                 <span className="text-xs font-bold text-green-700 dark:text-green-300 min-w-fit">High (80–90%)</span>
               </div>
-              <p className="text-sm text-black dark:text-white leading-relaxed">
+              <p className="text-base text-black dark:text-white leading-relaxed">
                 Indicates how often this guidance aligns with official program criteria across similar scenarios. Confidence reflects pattern consistency, not legal certainty or guaranteed outcomes.
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function TrustPanel() {
               </div>
               <h4 className="font-semibold text-indigo-900 dark:text-indigo-200">Data Sources</h4>
             </div>
-            <ul className="space-y-2.5 text-sm text-indigo-700 dark:text-indigo-300">
+            <ul className="space-y-2.5 text-base text-indigo-700 dark:text-indigo-300">
               {scenario.trustInfo.sources.map((source, i) => {
                 const sourceDescriptions = [
                   "Defines eligibility, insurable hours, and benefit periods for EI.",
@@ -70,7 +70,7 @@ export default function TrustPanel() {
                       <CheckCircle2 className="w-3.5 h-3.5 mt-0.5 shrink-0 text-indigo-500 dark:text-indigo-400" />
                       <span className="font-medium">{source}</span>
                     </div>
-                    <p className="text-sm text-black dark:text-white ml-5 leading-relaxed">{sourceDescriptions[i]}</p>
+                    <p className="text-base text-black dark:text-white ml-5 leading-relaxed">{sourceDescriptions[i]}</p>
                   </li>
                 );
               })}
@@ -93,7 +93,7 @@ export default function TrustPanel() {
               </div>
               <h4 className="font-semibold text-amber-900 dark:text-amber-200">Known Limitations</h4>
             </div>
-            <ul className="space-y-2 text-sm text-black dark:text-white leading-relaxed">
+            <ul className="space-y-2 text-base text-black dark:text-white leading-relaxed">
               {[
                 "Does not verify identity or documentation.",
                 "Does not check real-time income, ROE status, or Service Canada records.",
@@ -117,7 +117,7 @@ export default function TrustPanel() {
               </div>
               <h4 className="font-semibold text-purple-900 dark:text-purple-200">Human Review</h4>
             </div>
-            <div className="space-y-2.5 text-sm text-black dark:text-white leading-relaxed">
+            <div className="space-y-2.5 text-base text-black dark:text-white leading-relaxed">
               <p>This assessment is informational and does not make eligibility decisions.</p>
               <p>Complex, unusual, or high-impact cases should always be reviewed by a trained program officer.</p>
               <p>A human authority must confirm any changes to benefits or program status.</p>
@@ -132,7 +132,7 @@ export default function TrustPanel() {
               </div>
               <h4 className="font-semibold text-slate-700 dark:text-slate-200 text-xs">Confidence & Bias Note</h4>
             </div>
-            <div className="space-y-2 text-sm text-black dark:text-white leading-relaxed">
+            <div className="space-y-2 text-base text-black dark:text-white leading-relaxed">
               <p>Definitions in legislation may differ from medical, cultural, or community interpretations.</p>
               <p>Always confirm eligibility terms with the appropriate program office.</p>
             </div>

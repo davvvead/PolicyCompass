@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# Extension Testing Checklist for ei.gc.ca
+
+echo "🔍 PolicyCompass Extension Debug Checklist"
+echo "=========================================="
+echo ""
+
+echo "1️⃣  VERIFY EXTENSION IS LOADED"
+echo "   Go to chrome://extensions/"
+echo "   - Look for 'PolicyCompass - Government Service Navigator'"
+echo "   - Should show a blue PC icon"
+echo "   - Status should be 'Enabled'"
+echo ""
+
+echo "2️⃣  RELOAD EXTENSION (CRITICAL!)"
+echo "   - Find the PolicyCompass extension in chrome://extensions/"
+echo "   - Click the REFRESH icon at the bottom of the extension card"
+echo "   - Wait for it to refresh"
+echo ""
+
+echo "3️⃣  HARD REFRESH THE PAGE"
+echo "   - Go to https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit/apply.html"
+echo "   - Press: Cmd + Shift + R (Mac) or Ctrl + Shift + R (Windows)"
+echo "   - Wait for page to fully load"
+echo ""
+
+echo "4️⃣  CHECK FOR THE EXTENSION WIDGET"
+echo "   - Look for a blue circular button in the bottom-right corner"
+echo "   - It should have a chat bubble icon inside"
+echo "   - Click it to open the PolicyCompass widget"
+echo ""
+
+echo "5️⃣  TEST A QUERY"
+echo "   - In the widget, type: 'What documents do I need?'"
+echo "   - Click the send button (→)"
+echo "   - You should see:"
+echo "     ✓ Your message appears"
+echo "     ✓ A 'Loading...' indicator"
+echo "     ✓ A response with EI document requirements"
+echo ""
+
+echo "6️⃣  IF YOU GET ERRORS - CHECK BROWSER CONSOLE"
+echo "   - Right-click on the page → Inspect → Console tab"
+echo "   - Look for messages starting with 'PolicyCompass'"
+echo "   - Should see: '✓ PolicyCompass: chrome.runtime is available'"
+echo "   - Or: '✗ PolicyCompass: chrome.runtime is NOT available'"
+echo ""
+
+echo "7️⃣  CHECK SERVICE WORKER LOGS (if chrome.runtime unavailable)"
+echo "   - Go to chrome://extensions/"
+echo "   - Find PolicyCompass, click Details"
+echo "   - Scroll to 'Inspect views'"
+echo "   - Click 'service worker' link"
+echo "   - Check the console for [PolicyCompass] messages"
+echo ""
+
+echo "8️⃣  VERIFY API IS RUNNING"
+echo "   Run this in a terminal:"
+echo "   curl -X POST http://localhost:3000/api/extension/process \\"
+echo "     -H 'Content-Type: application/json' \\"
+echo "     -d '{\"query\": \"test\", \"pageContent\": \"test\", \"pageTitle\": \"test\", \"pageUrl\": \"https://www.canada.ca\"}'"
+echo ""
+echo "   Should return: {\"success\": true, \"summary\": \"...\", ...}"
+echo ""
+
+echo "✅ EXPECTED RESULT"
+echo "   The extension widget should work with real-time responses"
+echo "   Page elements should be highlighted in yellow"
+echo ""

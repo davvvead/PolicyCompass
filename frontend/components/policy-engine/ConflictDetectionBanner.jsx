@@ -13,18 +13,18 @@ export default function ConflictDetectionBanner() {
   if (!conflicting.length) return null;
 
   return (
-    <Card className="border-amber-500/70 bg-amber-50 text-amber-900 flex items-start gap-3 px-4 py-3 text-sm">
+    <Card className="border-amber-500/70 bg-amber-50 text-amber-900 flex items-start gap-3 px-4 py-3 text-base">
       <div className="mt-0.5">
         <AlertTriangle className="w-4 h-4" />
       </div>
       <div className="space-y-1">
-        <div className="font-medium">Policy conflict detected</div>
-        <p className="text-xs text-amber-900/90">
+        <div className="font-semibold">Policy conflict detected</div>
+        <p className="text-sm text-amber-900/90">
           One or more benefits appear to pull in different directions. Review the conflicting rules before finalizing a recommendation.
         </p>
         <div className="flex flex-wrap gap-2 pt-1">
           {conflicting.map((policy) => (
-            <Badge key={policy.id} variant="outline" className="border-amber-500/60 text-amber-900 bg-amber-100/60 text-[11px]">
+            <Badge key={policy.id} variant="outline" className="border-amber-500/60 text-amber-900 bg-amber-100/60 text-xs">
               {policy.code}
             </Badge>
           ))}

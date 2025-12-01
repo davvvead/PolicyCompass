@@ -49,8 +49,8 @@ export default function InsightStack({
               <ClipboardCheck className="w-3.5 xs:w-4 h-3.5 xs:h-4" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs xs:text-sm font-medium text-foreground">Your Action Plan</div>
-              <div className="text-[9px] xs:text-[11px] text-muted-foreground truncate">
+              <div className="text-base xs:text-lg font-semibold text-foreground">Your Action Plan</div>
+              <div className="text-xs xs:text-sm text-muted-foreground truncate">
                 {scenario.pathway.length} steps • 4–6 weeks • {scenario.policies.slice(0, 2).map(p => p.name.split(' ')[0]).join(', ')}...
               </div>
             </div>
@@ -79,8 +79,8 @@ export default function InsightStack({
               <Network className="w-3.5 xs:w-4 h-3.5 xs:h-4" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs xs:text-sm font-medium text-foreground">Policies & intersections</div>
-              <div className="text-[9px] xs:text-[11px] text-muted-foreground truncate">
+              <div className="text-base xs:text-lg font-semibold text-foreground">Policies & intersections</div>
+              <div className="text-xs xs:text-sm text-muted-foreground truncate">
                 {alignedPolicies.length} aligned • {ambiguousPolicies.length} ambiguous • {conflictPolicies.length} conflict
               </div>
             </div>
@@ -103,14 +103,14 @@ export default function InsightStack({
             <div className="space-y-3">
               {alignedPolicies.length > 0 && (
                 <div>
-                  <h4 className="text-[10px] xs:text-xs font-medium text-muted-foreground mb-1 uppercase tracking-wider">Aligned ({alignedPolicies.length})</h4>
-                  <p className="text-[9px] xs:text-[11px] text-muted-foreground mb-1.5">Programs that work together without issue.</p>
+                  <h4 className="text-xs xs:text-sm font-medium text-muted-foreground mb-1 uppercase tracking-wider">Aligned ({alignedPolicies.length})</h4>
+                  <p className="text-sm xs:text-base text-muted-foreground mb-1.5">Programs that work together without issue.</p>
                   <div className="flex flex-wrap gap-1 xs:gap-2">
                     {alignedPolicies.map(p => (
                       <Badge 
                         key={p.id} 
                         variant="outline" 
-                        className="bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-300 dark:border-emerald-800 font-normal text-[10px] xs:text-xs px-2 py-0.5 xs:px-3 xs:py-1"
+                        className="bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-300 dark:border-emerald-800 font-normal text-xs xs:text-sm px-2 py-0.5 xs:px-3 xs:py-1"
                       >
                         {p.name}
                       </Badge>
@@ -121,14 +121,14 @@ export default function InsightStack({
 
               {ambiguousPolicies.length > 0 && (
                 <div>
-                  <h4 className="text-[10px] xs:text-xs font-medium text-muted-foreground mb-1 uppercase tracking-wider">Ambiguous ({ambiguousPolicies.length})</h4>
-                  <p className="text-[9px] xs:text-[11px] text-muted-foreground mb-1.5">Programs that may behave differently depending on income/timing.</p>
+                  <h4 className="text-xs xs:text-sm font-medium text-muted-foreground mb-1 uppercase tracking-wider">Ambiguous ({ambiguousPolicies.length})</h4>
+                  <p className="text-sm xs:text-base text-muted-foreground mb-1.5">Programs that may behave differently depending on income/timing.</p>
                   <div className="flex flex-wrap gap-1 xs:gap-2">
                     {ambiguousPolicies.map(p => (
                       <Badge 
                         key={p.id} 
                         variant="outline" 
-                        className="bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/20 dark:text-amber-300 dark:border-amber-800 font-normal text-[10px] xs:text-xs px-2 py-0.5 xs:px-3 xs:py-1"
+                        className="bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/20 dark:text-amber-300 dark:border-amber-800 font-normal text-xs xs:text-sm px-2 py-0.5 xs:px-3 xs:py-1"
                       >
                         {p.name}
                       </Badge>
@@ -139,14 +139,14 @@ export default function InsightStack({
 
               {conflictPolicies.length > 0 && (
                 <div>
-                  <h4 className="text-[10px] xs:text-xs font-medium text-muted-foreground mb-1 uppercase tracking-wider">Conflict ({conflictPolicies.length})</h4>
-                  <p className="text-[9px] xs:text-[11px] text-muted-foreground mb-1.5">Programs that cannot be combined in this scenario.</p>
+                  <h4 className="text-xs xs:text-sm font-medium text-muted-foreground mb-1 uppercase tracking-wider">Conflict ({conflictPolicies.length})</h4>
+                  <p className="text-sm xs:text-base text-muted-foreground mb-1.5">Programs that cannot be combined in this scenario.</p>
                   <div className="flex flex-wrap gap-1 xs:gap-2">
                     {conflictPolicies.map(p => (
                       <Badge 
                         key={p.id} 
                         variant="outline" 
-                        className="bg-red-50 text-red-700 border-red-200 dark:bg-red-900/20 dark:text-red-300 dark:border-red-800 font-normal text-[10px] xs:text-xs px-2 py-0.5 xs:px-3 xs:py-1"
+                        className="bg-red-50 text-red-700 border-red-200 dark:bg-red-900/20 dark:text-red-300 dark:border-red-800 font-normal text-xs xs:text-sm px-2 py-0.5 xs:px-3 xs:py-1"
                       >
                         {p.name}
                       </Badge>
@@ -158,8 +158,8 @@ export default function InsightStack({
 
             {/* Why This Matters Section */}
             <div className="bg-muted/30 rounded-lg p-2 xs:p-4 border border-border/50">
-              <h4 className="text-xs xs:text-sm font-semibold mb-1">Why this matters</h4>
-              <p className="text-[10px] xs:text-sm text-muted-foreground leading-relaxed">
+              <h4 className="text-sm xs:text-base font-semibold mb-1">Why this matters</h4>
+              <p className="text-sm xs:text-base text-muted-foreground leading-relaxed">
                 Ontario Works (OW-Dir-4.1) conflicts with Employment Insurance because EI must be considered first. This creates timing and eligibility overlaps for permanent residents.
               </p>
             </div>
@@ -178,8 +178,8 @@ export default function InsightStack({
               <GitBranch className="w-3.5 xs:w-4 h-3.5 xs:h-4" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs xs:text-sm font-medium text-foreground">How we decided</div>
-              <div className="text-[9px] xs:text-[11px] text-muted-foreground truncate">
+              <div className="text-base xs:text-lg font-semibold text-foreground">How we decided</div>
+              <div className="text-xs xs:text-sm text-muted-foreground truncate">
                 {scenario.reasoningSteps.length} key checks • 1 flagged for human review
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function InsightStack({
         
         {openSection === 'decisions' && (
           <div className="p-2 xs:p-4 border-t bg-background animate-in slide-in-from-top-2 duration-200">
-            <div className="mb-3 text-[10px] xs:text-sm text-muted-foreground">
+            <div className="mb-3 text-sm xs:text-base text-muted-foreground">
               Based on your profile, we prioritized federal benefits over provincial ones to maximize your eligible support.
             </div>
             <ReasoningSteps />

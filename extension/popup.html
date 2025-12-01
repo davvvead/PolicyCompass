@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolicyCompass Navigator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      width: 320px;
+      background: white;
+      color: #252F3D;
+    }
+
+    .popup-container {
+      padding: 16px;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #252F3D 0%, #6093DD 100%);
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    header p {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .toggle-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      background: #f5f5f5;
+      border-radius: 6px;
+    }
+
+    .toggle-label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .toggle-switch {
+      width: 44px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .toggle-switch.active {
+      background: #98F0E1;
+    }
+
+    .toggle-switch::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      transition: left 0.3s;
+    }
+
+    .toggle-switch.active::after {
+      left: 22px;
+    }
+
+    .settings-group {
+      padding: 12px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+    }
+
+    .settings-group h3 {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #649DE1;
+    }
+
+    .setting-option {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .setting-option input[type="radio"] {
+      margin-top: 2px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #98F0E1 0%, #649DE1 100%);
+      color: white;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .info-text {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+      background: #f9f9f9;
+      padding: 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      <h1>PolicyCompass Navigator</h1>
+      <p>Government service guide for your current page</p>
+    </header>
+
+    <div class="toggle-section">
+      <span class="toggle-label">Enable Extension</span>
+      <div id="toggleSwitch" class="toggle-switch active"></div>
+    </div>
+
+    <div class="settings-group">
+      <h3>Language</h3>
+      <div class="setting-option">
+        <input type="radio" id="lang-en" name="language" value="en" checked>
+        <label for="lang-en">English</label>
+      </div>
+      <div class="setting-option">
+        <input type="radio" id="lang-fr" name="language" value="fr">
+        <label for="lang-fr">Français</label>
+      </div>
+      <div class="setting-option">
+        <input type="radio" id="lang-es" name="language" value="es">
+        <label for="lang-es">Español</label>
+      </div>
+    </div>
+
+    <div class="settings-group">
+      <h3>Accessibility</h3>
+      <div class="setting-option">
+        <input type="checkbox" id="accessibility-mode">
+        <label for="accessibility-mode">High contrast mode</label>
+      </div>
+      <div class="setting-option">
+        <input type="checkbox" id="voice-enabled">
+        <label for="voice-enabled">Enable voice explanations</label>
+      </div>
+    </div>
+
+    <p class="info-text">
+      💡 This extension is active on government websites. Open a government page and click the floating icon to get help navigating services in simple language.
+    </p>
+
+    <button onclick="openOptions()">View Full Settings</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

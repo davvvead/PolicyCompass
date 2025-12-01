@@ -99,7 +99,7 @@ export const mockScenario = {
       title: "Apply for Employment Insurance",
       description: "Submit application via Service Canada. Do this immediately as there is a 1-week waiting period.",
       deadline: "Within 4 weeks of last day worked",
-      actionUrl: "#"
+      actionUrl: "https://www.canada.ca/en/services/benefits/ei.html"
     },
     {
       id: "step2",

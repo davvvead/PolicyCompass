@@ -13,7 +13,7 @@ export default function ReasoningSteps() {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-sm font-semibold">Resolution Logic</h3>
+      <h3 className="text-base font-semibold">Resolution Logic</h3>
       <div className="relative border-l-2 border-muted ml-2 space-y-6 pb-2">
         {scenario.reasoningSteps.map((item, index) => (
           <motion.div
@@ -30,8 +30,8 @@ export default function ReasoningSteps() {
               {index === 2 ? <AlertCircle className="w-2 h-2" /> : <CheckCircle2 className="w-2 h-2" />}
             </div>
             <div className="space-y-1">
-              <p className="text-sm font-medium leading-none">{item.step}</p>
-              <p className="text-xs text-muted-foreground">{item.detail}</p>
+              <p className="text-base font-medium leading-none">{item.step}</p>
+              <p className="text-sm text-muted-foreground">{item.detail}</p>
             </div>
           </motion.div>
         ))}
